@@ -1,0 +1,12 @@
+.img-fluid{
+    mix-blend-mode:color-dodge
+}
+.w-14{
+    width: 8rem;
+}
+.round-s{
+    border-radius: 1rem 0 0 1rem ;
+}
+.round-e{
+    border-radius: 0 1rem 1rem 0;
+}
