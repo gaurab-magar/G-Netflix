@@ -94,7 +94,7 @@ export const Footer = () => {
           ))}
           <div className='col-md-3 p-3 p-sm-4'>
               <Link to='/'>
-                <img className='img-fluid' src={navbrand}></img>
+                <img className='img-fluid' src={navbrand} alt='footerImg'></img>
               </Link>
               <div className='d-flex  justify-content-evenly'>
                 <FaFacebookSquare id='icon' style={{fontSize:'1.7rem'}}/>
