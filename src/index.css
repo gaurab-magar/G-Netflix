@@ -6,3 +6,6 @@ input:focus,textarea:focus,select:focus{
     outline: 0 !important;
     box-shadow: none !important;
 }
+main{
+    min-height: 90vh;
+}

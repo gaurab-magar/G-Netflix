@@ -9,7 +9,7 @@ import { FaHeart, FaUserCircle } from "react-icons/fa";
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
       <div className="container d-flex align-items-center justify-content-between">
           <Link to="/" className='w-14' >
             <img className='img-fluid' src={navbrand} alt='navbrand'></img>
@@ -17,10 +17,10 @@ export const Header = () => {
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
+          <div class="collapse navbar-collapse ms-md-5" id="navbarSupportedContent">
+
             <form className="d-flex">
-              <div className="input-group">
+              <div className="input-group my-4 my-md-0">
                 <input className="form-control px-4 round-s" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-danger px-4 round-e " type="submit">
                 <GoSearch style={{ color:'whitesmoke' }} />
@@ -28,7 +28,7 @@ export const Header = () => {
               </div>
             </form>
           
-            <ul className="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between gap-3 me-3">
+            <ul className="ms-auto navbar-nav mb-2 mb-lg-0 d-flex justify-content-between gap-3 me-3">
               <li className="nav-item">
                 <NavLink className="nav-link"  to="/movie">Movies</NavLink>
               </li>
@@ -44,7 +44,7 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link position-relative" to="/favourite">
+                <NavLink className="nav-link position-relative d-inline d-md-block" to="/favourite">
                   <FaHeart style={{ fontSize: '1.5em'}} />
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     99+
