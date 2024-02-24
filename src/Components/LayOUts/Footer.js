@@ -110,9 +110,9 @@ export const Footer = () => {
         <hr />
         <p>&copy; 2019 Company, Inc.</p>
         <ul className="list-inline">
-          <li className="list-inline-item"><a className="text-decoration-none text-light" href="#">Privacy</a></li>
-          <li className="list-inline-item"><a className="text-decoration-none text-light" href="#">Terms</a></li>
-          <li className="list-inline-item"><a className="text-decoration-none text-light" href="#">Support</a></li>
+          <li className="list-inline-item"><Link className="text-decoration-none text-light" to="/">Privacy</Link></li>
+          <li className="list-inline-item"><Link className="text-decoration-none text-light" t0="/">Terms</Link></li>
+          <li className="list-inline-item"><Link className="text-decoration-none text-light" to="/">Support</Link></li>
         </ul>
       </div>
     </footer>
