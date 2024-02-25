@@ -21,7 +21,7 @@ export const Header = () => {
 
             <form className="d-flex">
               <div className="input-group my-4 my-md-0">
-                <input className="form-control px-4 round-s" type="search" placeholder="Search" aria-label="Search" />
+                <input className="form-control px-4 round-s border-0" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-danger px-4 round-e " type="submit">
                 <GoSearch style={{ color:'whitesmoke' }} />
                 </button>

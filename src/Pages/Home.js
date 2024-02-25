@@ -6,8 +6,8 @@ import { Promos } from '../Components/Home/Promos'
 
 export const Home = () => {
   return (
-    <main className='bg-dark'>
-      <section className='container-fluid px-0 py-4 bg-dark text-light'>
+    <main className='bg-black'>
+      <section className='container-fluid px-0 py-4 bg-black text-light'>
         <Banner />
         <PopularMovies />
         <Promos />

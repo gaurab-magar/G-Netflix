@@ -18,14 +18,14 @@ export const Banner = () => {
                 loop={true}
                 speed={1000}
                 modules={[Autoplay]}
-                autoplay={{delay: 4000, disableOnInteraction:false}}
+                autoplay={{delay: 2000, disableOnInteraction:false}}
                 className='w-100 p-0 swipper-h' >
                     <div className="swiper-slide">
                         {Movies.map((item,index)=>(
                             <SwiperSlide key={index} className='slide-h'>
                                 <img alt={item.name} className='img-fluid' src={item.image} />
-                                <div className='overlay d-flex align-items-center '>
-                                    <div className='container-fluid ps-sm-0 ps-md-5'>
+                                <div className='overlay d-flex align-items-end pb-sm-1'>
+                                    <div className='container-fluid details'>
                                         <p>{item.description}</p>
                                         <h1 className='fs-3 fw-bold' > {item.name}</h1>
                                         <p>{item.desc}</p>
