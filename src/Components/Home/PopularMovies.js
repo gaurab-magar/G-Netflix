@@ -42,8 +42,8 @@ import { FaFire } from "react-icons/fa";
 import { Movies } from '../../Data/MovieData';
 import { PopularCard } from '../PopularCard';
 import './PopularMovies.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay } from 'swiper/modules';
 
 export const PopularMovies = () => {
   return (
@@ -68,7 +68,7 @@ export const PopularMovies = () => {
 
 
 
-{/* <Swiper
+/* <Swiper
             direction='horizontal'
             slidesPerView={1}
             loop={true}
@@ -83,4 +83,4 @@ export const PopularMovies = () => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper> */}
+          </Swiper> */
