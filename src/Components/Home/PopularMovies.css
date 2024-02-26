@@ -17,3 +17,11 @@
     transition: all .5s ease-in-out;
 }
 
+/* for the :horizontal scrollable */
+.scrollable-row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .scrollable-container {
+    display: inline-flex;
+  }

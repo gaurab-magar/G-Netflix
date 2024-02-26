@@ -48,5 +48,21 @@
     .padding-sm{
         padding: 1.5rem;
     }
+    .scrollable-row {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .scrollable-container {
+        display: inline-flex;
+      }
+      .scrollable-item {
+        flex: 0 0 auto;
+        margin-right: 10px; /* Adjust spacing between cards */
+        display: inline-block; /* Ensure items stay inline */
+        vertical-align: top; /* Align items to the top */
+      }
+      .col-small{
+        width: 50%;
+      }
 
 }

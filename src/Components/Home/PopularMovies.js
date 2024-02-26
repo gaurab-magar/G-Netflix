@@ -54,10 +54,12 @@ export const PopularMovies = () => {
             Popular Movies
           <FaFire style={{marginLeft:'.7rem'}} />
         </h2>
-        <div className='row py-4'>
-          {Movies.slice(0,4).map((item,index)=>(
-            <PopularCard key={index} item={item} />
-          ))}
+        <div className='scrollable-row py-4 scrollbar-color'>
+          <div className='scrollable-container'>
+              {Movies.map((item,index)=>(
+                <PopularCard key={index} item={item} />
+              ))}
+          </div>
         </div>
       </div>
     </section>
