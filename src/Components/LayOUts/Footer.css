@@ -4,3 +4,6 @@
 #icon:hover{
     color: red!important;
 }
+.img-dudge{
+    mix-blend-mode:color-dodge
+}

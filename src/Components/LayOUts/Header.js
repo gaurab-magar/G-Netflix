@@ -12,7 +12,7 @@ export const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
       <div className="container d-flex align-items-center justify-content-between">
           <Link to="/" className='w-14' >
-            <img className='img-fluid' src={navbrand} alt='navbrand'></img>
+            <img className='img-dudge img-fluid' src={navbrand} alt='navbrand'></img>
           </Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
