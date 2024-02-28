@@ -27,7 +27,7 @@ export const Promos = () => {
           </div>
           <div className='col-md-6 mt-3'>
             <h1 className='fw-bold'>Watch everywhere</h1>
-            <p className='fw-bold'>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            <p className='semibold'>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>            
           </div>
         </div>
       </div>

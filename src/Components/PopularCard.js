@@ -5,7 +5,7 @@ import './Home/PopularMovies.css';
 
 export const PopularCard = ({item}) => {
   return (
-        <div className='col-md-3 col-small scrollable-item'>
+        <div className='col-md-3 me-2 col-small scrollable-item'>
             <div className='card border-0 rounded-3 overflow-hidden  position-relative'>
                 <img className='w-100' src={item.image} alt={item.name}></img>
                 <div className='d-img w-100 h-25 d-flex align-items-center justify-content-between'>
