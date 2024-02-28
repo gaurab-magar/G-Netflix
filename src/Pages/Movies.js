@@ -12,4 +12,3 @@ export const Movies = () => {
     </main>
   )
 }
-          /* <Filter /> */
