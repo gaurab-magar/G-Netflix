@@ -2,7 +2,7 @@ export {Home} from "./Home";
 export {About} from "./About";
 export {Contact} from "./Contact";
 export {Login} from "./Login";
-export {Movies} from "./Movies";
+export {MoviesPage} from "./MoviesPage";
 export {PageNotFound} from "./PageNotFound";
 export {Register} from "./Register";
 export {SingleMovie} from "./SingleMovie";

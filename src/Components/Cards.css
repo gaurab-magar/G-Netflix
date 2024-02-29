@@ -1,0 +1,11 @@
+.card-width{
+    width: 18%;
+    margin-bottom: 1rem;
+}
+.imgProps{
+    height: 10rem;
+    object-fit: cover;
+}
+.f-2{
+    font-size: .7rem;
+}
