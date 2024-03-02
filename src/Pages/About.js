@@ -5,8 +5,8 @@ import './About.css';
 export const About = () => {
   return (
     <main className='bg-black' >
-        <Head />
         <section className='container py-4'>
+        <Head />
           <div className='row'>
             <h2 className='text-center text-white semibold py-4'>About Us</h2>
             <div className='row'>

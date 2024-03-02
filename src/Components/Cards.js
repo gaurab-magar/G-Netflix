@@ -1,10 +1,13 @@
 import React from 'react';
 import './Cards.css';
+import { Link } from 'react-router-dom';
 export const Cards = ({data}) => {
   return (
     <div className='card-width'>
         <div className='img-container'>
-            <img className='img-fluid imgProps rounded-3' alt={data.name} src={data.image} ></img>
+          <Link to={`/movie/${data.name}`}>
+            <img className='img-fluid imgProps w-100 rounded-3' alt={data.name} src={data.image} ></img>
+          </Link>
         </div>
         <div className='details py-2 p-0'>
             <div className='d-flex justify-content-between text-secondary'>

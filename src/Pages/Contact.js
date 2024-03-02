@@ -31,8 +31,8 @@ export const Contact = () => {
   ]
   return (
     <main>
-      <Head />
       <section className='container-fluid py-4 bg-black'>
+      <Head />
         <h2 className='text-center semibold text-white py-4 text-uppercase'>Contact Us</h2>
         <div className='row'>
           {ContactData.map((contactItem,index)=>(
