@@ -4,8 +4,7 @@ import { IoIosTime } from "react-icons/io";
 import { IoShareSocial } from "react-icons/io5";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-
-
+import { Link } from 'react-router-dom';
 export const MovieInfo = ({movie}) => (
     <section>
         <div className='container-fluid py-4 d-flex align-items-center justify-content-center'>
@@ -51,10 +50,10 @@ export const MovieInfo = ({movie}) => (
                             <FaStar className='text-warning ms-2' />
                         </p>
                     </div>
-                        <button className='btn btn-outline-danger rounded-5 px-3 my-4'>
+                        <Link to={`/watch/${movie.id}`} className='btn btn-outline-danger rounded-5 px-3 my-4'>
                             <FaGooglePlay className='me-2' />
                             Watch
-                        </button>
+                        </Link>
                 </div>
             </div>
         </div>
