@@ -50,7 +50,7 @@ export const MovieInfo = ({movie}) => (
                             <FaStar className='text-warning ms-2' />
                         </p>
                     </div>
-                        <Link to={`/watch/${movie.id}`} className='btn btn-outline-danger rounded-5 px-3 my-4'>
+                        <Link to={`/watch/${movie.name}`} className='btn btn-outline-danger rounded-5 px-3 my-4'>
                             <FaGooglePlay className='me-2' />
                             Watch
                         </Link>

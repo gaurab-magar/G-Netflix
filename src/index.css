@@ -9,6 +9,29 @@ input:focus,textarea:focus,select:focus{
 main{
     min-height: 90vh;
 }
-/* .bg-black{
-    background-color: black;
-} */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.video-size {
+    max-width: 100%; /* Ensures the video container doesn't exceed its parent's width */
+    max-height: 100%; /* Ensures the video container doesn't exceed its parent's height */
+    width:auto; /* Default width */
+    height: 22.5rem; /* Default height */
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+}

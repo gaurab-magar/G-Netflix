@@ -13,7 +13,7 @@ export const SingleMovie = () => {
       <div className="container py-4">
         <h2 className="text-center text-white semibold mb-5">Related Movies</h2>
         <div className="row gy-4 gx-4 justify-content-center align-items-stretch">
-          {RelatedMovies.map((movie,index)=>(
+          {RelatedMovies.slice(0,5).map((movie,index)=>(
             <Cards data={movie} key={index}/>
           ))}
         </div>
