@@ -35,3 +35,13 @@ main{
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio while covering the container */
 }
+
+.loginCard-width {
+    width: 90%;
+  }
+  
+  @media (min-width: 768px) {
+    .loginCard-width {
+      width: 40%;
+    }
+  }

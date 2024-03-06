@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaCloudArrowDown } from "react-icons/fa6";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import movieVideo from '../Assets/movie.mp4';
 
 export const WatchPage = () => {
   let {id} = useParams();
@@ -38,8 +39,8 @@ export const WatchPage = () => {
               <div className=''>
                 {play ? (
                       <div className='container video-container'>
-                          <video controls className='video'>
-                              <source src="" type='video/mp4' title={movie.name} />
+                          <video controls autoPlay={play} className='video'>
+                              <source src={movieVideo} type='video/mp4' title={movie.name} />
                           </video>
                       </div>
                   ) : (

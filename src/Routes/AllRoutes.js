@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home,About, PageNotFound,MoviesPage, Contact, Login, SingleMovie, WatchPage} from '../Pages/index.js';
+import {Home,About, PageNotFound,MoviesPage, Contact, Login, SingleMovie, WatchPage, Register} from '../Pages/index.js';
 import {Routes , Route} from "react-router-dom";
 import { Favourites } from '../Pages/Favourites.js';
 
@@ -13,6 +13,7 @@ export const AllRoutes = () => {
         <Route path="/movie/:id" element={<SingleMovie />} />
         <Route path="/watch/:id" element={<WatchPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path='/register' element={<Register />} />
         <Route path="/favourite" element={<Favourites />} />
         <Route path='*' element={<PageNotFound />} />
     </Routes>
