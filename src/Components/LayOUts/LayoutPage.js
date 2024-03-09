@@ -1,13 +1,9 @@
-import React from 'react'
-import { Header } from './Header'
-import { Footer } from './Footer'
+import React from 'react';
 
 export const LayoutPage = ({children}) => {
   return (
     <div className='bg-light'>
-        <Header />
-            {children}
-        <Footer />
+      {children}
     </div>
   )
 }

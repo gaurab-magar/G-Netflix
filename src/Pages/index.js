@@ -7,4 +7,3 @@ export {PageNotFound} from "./PageNotFound";
 export {Register} from "./Register";
 export {SingleMovie} from "./SingleMovie";
 export {WatchPage} from "./WatchPage";
-export {Favourites} from "./Favourites";

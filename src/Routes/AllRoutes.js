@@ -1,8 +1,9 @@
 import React from 'react';
 import {Home,About, PageNotFound,MoviesPage, Contact, Login, SingleMovie, WatchPage, Register} from '../Pages/index.js';
 import {Routes , Route} from "react-router-dom";
-import { Favourites } from '../Pages/Favourites.js';
-
+import { Profile } from '../Pages/Admin/Profile.js';
+import {Password} from '../Pages/Admin/Password.js';
+import {FavouritesMovies} from '../Pages/Admin/FavouritesMovies.js';
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -14,7 +15,9 @@ export const AllRoutes = () => {
         <Route path="/watch/:id" element={<WatchPage />} />
         <Route path="/login" element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path="/favourite" element={<Favourites />} />
+        <Route path='/Password' element={<Password />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path="/favourites" element={<FavouritesMovies />} />
         <Route path='*' element={<PageNotFound />} />
     </Routes>
   )

@@ -9,6 +9,12 @@ input:focus,textarea:focus,select:focus{
 main{
     min-height: 90vh;
 }
+.dotted-border {
+    border: 1px dotted #fbf9f9; /* You can customize the color by changing #000 */
+}
+.custom-rounded {
+    border-radius: 0.5rem; /* You can adjust the radius value as needed */
+  }
 .play-button {
     position: absolute;
     top: 50%;
