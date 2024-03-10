@@ -13,12 +13,12 @@ export const SideBar = ({children}) => {
     const SideLinks=[
         {
             name:'Dashborad',
-            link:'/',
+            link:'/dashboard',
             icon:CiGrid2H
         },
         {
             name:'Movies List',
-            link:'/MoviesPage',
+            link:'/movielist',
             icon:MdLocalMovies
         },
         {

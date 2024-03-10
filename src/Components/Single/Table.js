@@ -1,5 +1,10 @@
-import React from 'react'
-const Rows = (movie,i)=>{
+import React from 'react';
+import { FaCloudDownloadAlt, FaRegEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import { FaEye } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
+const Rows = (movie,i,admin)=>{
   return(
     <tr key={i} className='align-middle'>
       <th className='ps-4'>
@@ -13,7 +18,26 @@ const Rows = (movie,i)=>{
       <th className='fw-lighter'>{movie.Year}</th>
       <th className='fw-lighter'>{movie.time}</th>
       <th className='text-end pe-4'>
-        <button className='btn btn-outline-danger'>delete</button>
+        {admin ? 
+        <>
+          <button className='btn btn-outline-light me-2'>
+            <FaRegEdit />
+            Edit
+          </button>
+          <button className='btn btn-outline-danger'>
+            <MdDelete />
+          </button>
+        </>
+        : 
+        <>
+          <button className='btn btn-outline-light me-2'>
+            <FaCloudDownloadAlt />
+          </button>
+          <Link to={`/movie/${movie.name}`} className='btn btn-outline-danger'>
+            <FaEye />
+          </Link>
+        </>
+        }
       </th>
     </tr>
   )
@@ -34,7 +58,7 @@ export const Table = ({data,admin}) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((movie,i)=> Rows(movie,i))}
+          {data.map((movie,i)=> Rows(movie,i,admin))}
         </tbody>
       </table>
     </div>

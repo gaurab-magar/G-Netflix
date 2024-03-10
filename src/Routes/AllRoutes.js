@@ -4,6 +4,8 @@ import {Routes , Route} from "react-router-dom";
 import { Profile } from '../Pages/Admin/Profile.js';
 import {Password} from '../Pages/Admin/Password.js';
 import {FavouritesMovies} from '../Pages/Admin/FavouritesMovies.js';
+import { MovieList } from '../Pages/Admin/MovieList.js';
+import { Dashboard } from '../Pages/Admin/Dashboard.js';
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -18,6 +20,8 @@ export const AllRoutes = () => {
         <Route path='/Password' element={<Password />} />
         <Route path='/profile' element={<Profile />} />
         <Route path="/favourites" element={<FavouritesMovies />} />
+        <Route path="/movielist" element={<MovieList />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path='*' element={<PageNotFound />} />
     </Routes>
   )
