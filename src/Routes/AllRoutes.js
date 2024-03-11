@@ -6,6 +6,8 @@ import {Password} from '../Pages/Admin/Password.js';
 import {FavouritesMovies} from '../Pages/Admin/FavouritesMovies.js';
 import { MovieList } from '../Pages/Admin/MovieList.js';
 import { Dashboard } from '../Pages/Admin/Dashboard.js';
+import { Categories } from '../Pages/Admin/Categories.js';
+import { Users } from '../Pages/Admin/Users.js';
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -22,6 +24,8 @@ export const AllRoutes = () => {
         <Route path="/favourites" element={<FavouritesMovies />} />
         <Route path="/movielist" element={<MovieList />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/users" element={<Users />} />
         <Route path='*' element={<PageNotFound />} />
     </Routes>
   )
