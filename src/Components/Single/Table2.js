@@ -2,7 +2,7 @@ import React from 'react';
 import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
-const Rows = (data,i,users)=>{
+const Rows = (data,i,users,OnEditFunction)=>{
   return(
     <tr key={i} className='align-middle'>
         {
@@ -30,7 +30,7 @@ const Rows = (data,i,users)=>{
                 <th className='fw-lighter'>{data.FullName}</th>
                 <th className='fw-lighter'>{data.email? data.email:'example.@gmail.com'}</th>
                 <th className='text-end pe-4'>
-                    <button className='btn btn-outline-light me-2'>
+                    <button onClick={()=>OnEditFunction(data)} className='btn btn-outline-light me-2'>
                         <FaRegEdit />
                         Edit
                     </button>
@@ -43,7 +43,7 @@ const Rows = (data,i,users)=>{
     </tr>
   )
 }
-export const Table2 = ({data,users}) => {    
+export const Table2 = ({data,users,OnEditFunction}) => {    
   return (
     <div className='my-3'>
       <table className='table table-dark'>
@@ -72,7 +72,7 @@ export const Table2 = ({data,users}) => {
           </tr>
         </thead>
         <tbody>
-                {data.map((data,i)=> Rows(data,i,users))}
+                {data.map((data,i)=> Rows(data,i,users,OnEditFunction))}
         </tbody>
       </table>
     </div>

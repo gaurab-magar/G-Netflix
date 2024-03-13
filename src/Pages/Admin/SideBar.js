@@ -69,7 +69,7 @@ export const SideBar = ({children}) => {
                     </div>
                 </div>
             </div>
-            <div className='col border rounded-3 p-3 text-white  '>
+            <div className='col p-3 text-white  '>
                 {children}
             </div>
         </div>

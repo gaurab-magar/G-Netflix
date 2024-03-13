@@ -8,6 +8,7 @@ import { MovieList } from '../Pages/Admin/MovieList.js';
 import { Dashboard } from '../Pages/Admin/Dashboard.js';
 import { Categories } from '../Pages/Admin/Categories.js';
 import { Users } from '../Pages/Admin/Users.js';
+import { AddMore } from '../Pages/Admin/AddMore.js';
 export const AllRoutes = () => {
   return (
     <Routes>
@@ -26,6 +27,7 @@ export const AllRoutes = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/addmovie" element={<AddMore />} />
         <Route path='*' element={<PageNotFound />} />
     </Routes>
   )
