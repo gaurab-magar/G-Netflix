@@ -5,7 +5,7 @@ import { IoShareSocial } from "react-icons/io5";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-export const MovieInfo = ({movie}) => (
+export const MovieInfo = ({movie , setModalOpen}) => (
     <section>
         <div className='container-fluid py-4 d-flex align-items-center justify-content-center'>
             <div className='row '>
@@ -38,10 +38,10 @@ export const MovieInfo = ({movie}) => (
                         {movie.desc}
                     </p>
                     <div className='d-flex gap-3 align-items-center'>
-                        <a href='/' className='text-decoration-none text-light'>
+                        <p onClick={() => setModalOpen(true)} className='mb-0' style={{cursor:'pointer',color:'#28a745'}}>
                             <IoShareSocial  className='me-2' />
                             social media
-                        </a>
+                        </p>
                         <p className='mb-0 text-light'>
                             Language:  English / {movie.language}
                         </p>
