@@ -44,7 +44,7 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link position-relative d-inline d-md-block" to="/favourite">
+                <NavLink className="nav-link position-relative d-inline d-md-block" to="/profile">
                   <FaHeart style={{ fontSize: '1.5em'}} />
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     99+
